@@ -12,4 +12,5 @@ To include the plugin, write the following shortcode in your post
 
 
 Created by: Sayangdipto Chakraborty
+
 Date: 25.03.2019
