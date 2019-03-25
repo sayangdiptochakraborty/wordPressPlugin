@@ -22,10 +22,10 @@ function html_form_code() {
 	echo '<input type="number" name="cf-size" pattern="[0-9]{2}" value="' . ( isset( $_POST["cf-size"] ) ? esc_attr( $_POST["cf-size"] ) : '' ) . '" size="40" />';
 	echo '</p>';
 	echo '<p>';
-	echo 'Date<br/>';
+	echo 'Tour Date<br/>';
 	echo '<input type="date" name="cf-date" value="' . ( isset( $_POST["cf-date"] ) ? esc_attr( $_POST["cf-date"] ) : '' ) . '" size="40" />';
 	echo '</p>';
-	echo '<p><input type="submit" name="cf-submitted" value="Send"></p>';
+	echo '<p><input type="submit" name="cf-submitted" id="button" value="Send"></p>';
 	echo '</form>';
 }
 
@@ -49,11 +49,16 @@ function deliver_mail() {
 function cf_shortcode() {
 	
 	ob_start();
-	deliver_mail();
-	html_form_code();
+	echo '<form action="' . esc_url( $_SERVER['REQUEST_URI'] ) . '" method="post">';
+	echo '<p><input type="submit" name="cf-submit"  value="Request Details"></p>';
+	echo '</form>';
+	if(isset($_POST['cf-submit']))
+	{ 
+		deliver_mail();
+		html_form_code();
+	}
 	return ob_get_clean();
 }
-
 add_shortcode( 'contact_form_plugin', 'cf_shortcode' );
 
 ?>
