@@ -12,11 +12,11 @@ To include the plugin, write the following shortcode in your post
 
 Here's how the plugin looks when loaded:
 
-![](https://ibb.co/cxGwTLw)
+[](https://ibb.co/cxGwTLw)
 
 When the button is clicked the plugin loads fully to:
 
-![](https://ibb.co/NxmJfmz)
+[](https://ibb.co/NxmJfmz)
 
 
 Created by: Sayangdipto Chakraborty
