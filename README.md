@@ -10,6 +10,14 @@ To include the plugin, write the following shortcode in your post
 [contact_form_plugin]
 ```
 
+Here's how the plugin looks when loaded:
+
+![](https://ibb.co/cxGwTLw)
+
+When the button is clicked the plugin loads fully to:
+
+![](https://ibb.co/NxmJfmz)
+
 
 Created by: Sayangdipto Chakraborty
 
